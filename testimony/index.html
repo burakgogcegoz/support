@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Testimony — Support</title>
+<meta name="description" content="Support and frequently asked questions for Testimony: Live Logic.">
+<style>
+  :root{
+    --paper:#f2ece0; --ink:#17161a; --pink:#ff3f6e; --blue:#2f3fd6;
+    --muted:#5b5750; --rule:#d8d0bf;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font:17px/1.65 ui-serif, Georgia, "Iowan Old Style", "Times New Roman", serif;
+    padding:0 20px;
+  }
+  .wrap{max-width:640px; margin:0 auto; padding:56px 0 96px}
+  header{border-bottom:3px solid var(--ink); padding-bottom:18px; margin-bottom:34px}
+  .mark{display:flex; flex-direction:column; gap:5px; width:104px; margin-bottom:20px}
+  .mark i{display:block; height:11px; background:var(--ink)}
+  .mark i:nth-child(2){width:66%}
+  .mark i:nth-child(3){width:34%; background:var(--pink)}
+  h1{font-size:31px; line-height:1.15; margin:0 0 6px; letter-spacing:-.01em}
+  .sub{margin:0; color:var(--muted); font-size:15px}
+  h2{font-size:14px; letter-spacing:.13em; text-transform:uppercase;
+     font-family:ui-sans-serif,-apple-system,"Segoe UI",Roboto,sans-serif;
+     margin:44px 0 14px; color:var(--muted)}
+  h3{font-size:18px; margin:30px 0 7px}
+  p{margin:0 0 15px}
+  a{color:var(--blue)}
+  a:hover{color:var(--pink)}
+  .lede{font-size:19px}
+  .note{border-left:3px solid var(--pink); padding:2px 0 2px 16px; margin:22px 0; color:var(--muted)}
+  ul{margin:0 0 15px; padding-left:20px}
+  li{margin-bottom:7px}
+  footer{margin-top:64px; padding-top:20px; border-top:1px solid var(--rule);
+         color:var(--muted); font-size:14px}
+  code{font:14px/1 ui-monospace,SFMono-Regular,Menlo,monospace; background:#e7dfd0; padding:2px 5px; border-radius:3px}
+  @media (prefers-color-scheme: dark){
+    :root{--paper:#141317; --ink:#ece7dd; --muted:#928c82; --rule:#2c2a30}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="mark" aria-hidden="true"><i></i><i></i><i></i></div>
+    <h1>Testimony: Live Logic</h1>
+    <p class="sub">Support &amp; frequently asked questions</p>
+  </header>
+
+  <p class="lede">Three to six people give testimony, one statement at a time. Each of them is either always truthful or always lying. Your job is to press the moment their statements can no longer all be true together.</p>
+
+  <h2>The one thing worth knowing first</h2>
+
+  <h3>I pressed and lost. Nothing was wrong.</h3>
+  <p>About one round in four never contradicts at all. In those rounds the correct move is to press nothing and let the round run out.</p>
+  <p>This is deliberate, and it is the reason there is no "press near the end" strategy — near the end is often exactly when nothing is wrong. If you press on every round you will lose most of them.</p>
+
+  <h3>A contradiction appeared and then my press was still wrong.</h3>
+  <p>A speaker can take back what they said. The moment they do, their earlier statement stops counting, so a contradiction can open and then close again. If you press after it closed, you were right about the wrong instant.</p>
+  <p>The review screen after each round shows exactly where those windows opened and closed.</p>
+
+  <h2>Playing</h2>
+
+  <h3>How does the difficulty work?</h3>
+  <p>It follows you. Win consistently and rounds get longer and less forgiving; struggle and they ease off. There is no difficulty menu because the game is already adjusting more precisely than a menu could.</p>
+
+  <h3>Statements go by too fast.</h3>
+  <p>Settings has a pace control with three positions. It changes how long each statement stays on screen and nothing else — the puzzles are identical at every setting, so a slower pace does not make the game easier to be right about, only easier to read.</p>
+
+  <h3>Is anything on screen hinting at the answer?</h3>
+  <p>No. Every statement looks the same, sounds the same and is timed the same way, whatever it does to the logic. If a round felt unfair, it was the reasoning that was hard — nothing was hidden from you.</p>
+
+  <h3>What is the falling number on the review screen?</h3>
+  <p>How many possible worlds were still standing after each statement. It is the game's real subject: 16, 8, 4, 2, 0 down the side of the screen is the possibility space closing.</p>
+
+  <h2>Settings and devices</h2>
+
+  <h3>Vibration does not work on my iPhone.</h3>
+  <p>This is a known platform limitation, not a fault in your device. The game runs in a web view, and iOS does not expose vibration to it. The setting is there because it is honoured on Android. Sound and everything else work normally on both.</p>
+
+  <h3>Does it need an internet connection?</h3>
+  <p>No. Testimony works completely offline, in aeroplane mode, forever. It makes no network requests at all.</p>
+
+  <h3>Which languages are supported?</h3>
+  <p>English, Turkish, Spanish, Portuguese, German, French and Russian. The game picks your device language on first launch; you can change it in Settings at any time.</p>
+
+  <h3>Will I lose my progress?</h3>
+  <p>Your level, best score and streak are stored on your device and survive closing the app, restarting the phone and updating the game. They are <em>not</em> backed up to any server, because the game has no server — so deleting the app deletes them.</p>
+
+  <h3>Can I play in landscape?</h3>
+  <p>No, and this is by design rather than an omission. The game shows a fixed number of statements on screen at once, and that count is an input to how the puzzles are built. Rotating the screen would quietly change the difficulty.</p>
+
+  <h2>Privacy</h2>
+  <p>Testimony collects nothing. No account, no sign-in, no analytics, no advertising, no network requests of any kind. Full detail is in the <a href="privacy.html">privacy policy</a>.</p>
+
+  <h2>Contact</h2>
+  <p>Bug reports, questions and disagreements about a round that you are certain the game got wrong are all welcome — the last kind especially, since every round is generated and checked by a solver, and a genuine counterexample is worth hearing about.</p>
+  <p>Email <a href="mailto:burakgogcegoz@gmail.com">burakgogcegoz@gmail.com</a>. If you are reporting a round, the screenshot of the review screen is usually enough to reconstruct it.</p>
+  <p class="note">Please include your device model and OS version. Replies usually take a few days — this is a one-person studio, not a support desk.</p>
+
+  <footer>
+    <p>Testimony: Live Logic — CerebroCraft.<br>
+    <a href="privacy.html">Privacy policy</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
