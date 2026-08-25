@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Driftleaf — Privacy Policy</title>
+<meta name="description" content="Driftleaf privacy policy: no servers, no accounts, no analytics; advertising through Unity LevelPlay.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,600&family=Public+Sans:wght@400;600&display=swap">
+<style>
+  :root {
+    --bg:#f3f8f6; --card:#ffffff; --ink:#16292b; --soft:#4f696e;
+    --line:#dae7e3; --line-soft:#eaf2ef; --accent:#2b7a71; --leaf:#5f8f41;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:#0e1617; --card:#141f1e; --ink:#e4efec; --soft:#a3bab6;
+      --line:#22322f; --line-soft:#192726; --accent:#77cec2; --leaf:#9ccb72;
+    }
+  }
+  * { box-sizing:border-box; }
+  body {
+    margin:0; padding:0 20px 72px; background:var(--bg); color:var(--ink);
+    font:16px/1.65 "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust:100%;
+  }
+  main { max-width:42rem; margin:0 auto; }
+  header.top { padding:44px 0 0; }
+  .mark { display:block; width:44px; height:44px; margin:0 0 14px; }
+  h1 {
+    font-family:Newsreader, Georgia, "Times New Roman", serif; font-weight:600;
+    font-size:clamp(1.7rem,5vw,2.3rem); line-height:1.15; margin:0 0 6px; text-wrap:balance;
+  }
+  .tagline { color:var(--soft); margin:0 0 20px; font-size:15px; }
+  .rule { height:2px; background:var(--ink); opacity:.85; margin:0 0 26px; }
+  .langs { display:flex; gap:8px; margin:0 0 26px; }
+  .langs button {
+    font:inherit; font-size:14px; padding:7px 15px; min-height:40px;
+    border:1px solid var(--line); border-radius:999px; background:var(--card);
+    color:var(--soft); cursor:pointer;
+  }
+  .langs button[aria-pressed="true"] { background:var(--accent); border-color:var(--accent); color:var(--bg); }
+  .langs button:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+  .eyebrow {
+    font-size:12px; letter-spacing:.13em; text-transform:uppercase;
+    color:var(--soft); margin:34px 0 12px;
+  }
+  h2 {
+    font-family:Newsreader, Georgia, serif; font-weight:600; font-size:1.15rem;
+    margin:30px 0 8px; padding-top:10px; border-top:1px solid var(--line);
+  }
+  h3 { font-size:1rem; margin:22px 0 4px; }
+  p { margin:0 0 12px; }
+  ul { padding-left:1.2rem; margin:0 0 14px; }
+  li { margin:5px 0; }
+  code {
+    background:var(--line-soft); border:1px solid var(--line); padding:1px 5px;
+    border-radius:5px; font-size:.9em;
+  }
+  a { color:var(--accent); overflow-wrap:anywhere; }
+  footer.end {
+    margin-top:44px; padding-top:18px; border-top:1px solid var(--line);
+    color:var(--soft); font-size:14px;
+  }
+  section[hidden] { display:none; }
+</style>
+</head>
+<body>
+<main>
+  <header class="top">
+    <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+      <circle cx="32" cy="34" r="24" fill="none" stroke="var(--accent)" stroke-width="2" opacity=".5"/>
+      <circle cx="32" cy="34" r="13" fill="none" stroke="var(--accent)" stroke-width="2" opacity=".5"/>
+      <path d="M32 16 C42 25 42 40 32 50 C22 40 22 25 32 16 Z" fill="var(--leaf)" opacity=".9"/>
+      <path d="M32 21 L32 45" stroke="var(--bg)" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+    </svg>
+    <h1>Driftleaf</h1>
+    <p class="tagline">Privacy Policy &middot; Gizlilik Politikası</p>
+    <div class="rule"></div>
+    <div class="langs">
+      <button type="button" data-lang="en" aria-pressed="true">English</button>
+      <button type="button" data-lang="tr" aria-pressed="false">Türkçe</button>
+    </div>
+  </header>
+
+  <section id="en" lang="en">
+<p><strong>Last updated: 23 August 2026</strong><br><strong>Applies to: Driftleaf for iOS and Android, version 1.0.0 and later</strong></p>
+<h2>The short version</h2>
+<p>Driftleaf has no servers, no accounts and no analytics. We — the developer — receive nothing about you and never will. The one exception is advertising: the app shows a short video between some levels, and an optional one you can choose to watch for an extra tap. Those ads are served by <strong>Unity LevelPlay (ironSource)</strong> and its mediation partners, and serving them involves your device&#x27;s advertising identifier. That is the whole of it.</p>
+<h2>What the app stores on your device</h2>
+<p>Driftleaf writes one entry to your device&#x27;s local storage, under the key <code>driftleaf.v2</code>. It holds:</p>
+<ul><li>which levels you have cleared and the fewest taps you used on each,</li><li>which one-line tutorials you have already seen,</li><li>your sound, haptics and language settings,</li><li>the last level you opened,</li><li>which levels you asked for a hint on,</li><li>a count of levels cleared since the last ad break.</li></ul>
+<p>That entry never leaves your device and is not sent to us — we operate no servers and receive no data. Deleting the app deletes it.</p>
+<h2>Advertising</h2>
+<p>The app uses <strong>Unity LevelPlay</strong> (ironSource, part of Unity Technologies) to select and show two kinds of ad:</p>
+<ul><li>an <strong>interstitial</strong> after every third level you clear,</li><li>an optional <strong>rewarded</strong> video you may choose to watch for one extra tap, at most twice per attempt. Every level in the game is solvable within its printed tap budget, so declining these ads never makes a puzzle unwinnable.</li></ul>
+<p>To serve those ads, LevelPlay and the ad networks it mediates may process:</p>
+<ul><li>your device&#x27;s advertising identifier (IDFA on iOS, Advertising ID on Android),</li><li>coarse device and app information — model, OS version, language, app version, connection type, and your approximate country, usually derived from your IP address,</li><li>ad interaction events: that an ad was shown, watched, closed or clicked.</li></ul>
+<p>This information goes to Unity/ironSource and their mediation partners under <strong>their own</strong> privacy policies, not to us. We never see it, and we receive no reports that identify you.</p>
+<ul><li>Unity/ironSource privacy policy: <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">https://unity.com/legal/game-player-and-app-user-privacy-policy</a></li><li>The current list of mediated networks is visible in the LevelPlay dashboard for this app.</li></ul>
+<p><strong>Your choices.</strong></p>
+<ul><li><strong>iOS:</strong> on first launch the app asks, through Apple&#x27;s App Tracking Transparency prompt, whether it may use your advertising identifier. If you decline, ads still appear but are chosen without that identifier. You can change the answer at any time in <em>Settings → Privacy &amp; Security → Tracking</em>.</li><li><strong>Android:</strong> you can delete or reset your Advertising ID, or opt out of personalised ads entirely, in <em>Settings → Google → Ads</em>.</li><li><strong>In the game:</strong> Settings → <em>Privacy choices</em> re-opens the consent screen at any time, so a decision made on first launch is never final.</li><li>On both platforms the game itself plays exactly the same either way.</li></ul>
+<h2>What the app still does not do</h2>
+<ul><li>We collect no personal data of any kind — not your name, e-mail, contacts, photos, precise location or IP address.</li><li>No accounts, no sign-in, no cloud save, no leaderboards, no social features.</li><li>No analytics or crash-reporting SDK. LevelPlay is the only third-party SDK in the app.</li><li>No purchases of any kind, in-app or otherwise.</li><li>The puzzles themselves need no connection: with the device offline every level, every language and all of your progress work normally, and only the ads are skipped.</li></ul>
+<h2>Permissions</h2>
+<ul><li><strong>Android</strong> declares <code>INTERNET</code> and <code>ACCESS_NETWORK_STATE</code> (the ad SDK needs them; the game itself makes no requests), <code>com.google.android.gms.permission.AD_ID</code> (the advertising identifier used for ads), and <code>VIBRATE</code> for the haptics setting, which you can switch off.</li><li><strong>iOS</strong> requests App Tracking Transparency, and nothing else.</li></ul>
+<h2>Children</h2>
+<p>Driftleaf contains no purchases, no chat, no user-generated content and no data collection by us. It does contain advertising, and the ad SDK uses an advertising identifier, so the app is <strong>not directed at children</strong> and is listed for a 13+ audience on Google Play. We do not knowingly collect data from children under 13. If you believe a child has provided data through this app, write to the address below and we will pass the request on to the ad partner.</p>
+<h2>Store-side data</h2>
+<p>Apple and Google process the download, purchase and crash-report flows for their own platforms under their own privacy policies. If you opt in to sharing crash diagnostics with Apple or Google at the operating-system level, that data goes to them, not to us.</p>
+<h2>Changes</h2>
+<p>If this policy changes, the new version will be published at the same address and the date at the top will change. A version of the app that begins collecting anything itself will say so here first.</p>
+<h2>Contact</h2>
+<p><a href="mailto:burakgogcegoz@gmail.com">burakgogcegoz@gmail.com</a></p>
+  </section>
+
+  <section id="tr" lang="tr">
+<p><strong>Son güncelleme: 23 Ağustos 2026</strong><br><strong>Kapsam: iOS ve Android için Driftleaf, sürüm 1.0.0 ve sonrası</strong></p>
+<h2>Kısa hâli</h2>
+<p>Driftleaf&#x27;in sunucusu, hesabı ve analitiği yok. Biz — geliştirici — sizinle ilgili hiçbir şey almıyoruz ve almayacağız. Tek istisna reklam: uygulama bazı bölümlerin arasında kısa bir video gösteriyor, bir de ek dokunuş karşılığında izlemeyi <em>seçebileceğiniz</em> bir video var. Bu reklamlar <strong>Unity LevelPlay (ironSource)</strong> ve onun aracılık ettiği ağlar tarafından sunuluyor ve sunulabilmeleri için cihazınızın reklam kimliği kullanılıyor. Hepsi bu kadar.</p>
+<h2>Uygulamanın cihazınızda sakladığı şey</h2>
+<p>Driftleaf, cihazınızın yerel depolamasına <code>driftleaf.v2</code> anahtarıyla tek bir kayıt yazar:</p>
+<ul><li>hangi seviyeleri geçtiğiniz ve her birinde kullandığınız en az dokunuş sayısı,</li><li>hangi tek satırlık öğreticileri gördüğünüz,</li><li>ses, titreşim ve dil tercihleriniz,</li><li>en son açtığınız seviye,</li><li>hangi seviyelerde ipucu istediğiniz,</li><li>son reklam arasından bu yana geçtiğiniz bölüm sayısı.</li></ul>
+<p>Bu kayıt cihazınızdan hiç çıkmaz ve bize gönderilmez — hiçbir sunucu işletmiyor, hiçbir veri almıyoruz. Uygulamayı silmek bu kaydı da siler.</p>
+<h2>Reklamlar</h2>
+<p>Uygulama iki tür reklam göstermek için <strong>Unity LevelPlay</strong>&#x27;i (ironSource, Unity Technologies) kullanır:</p>
+<ul><li>geçtiğiniz her üçüncü bölümden sonra bir <strong>geçiş reklamı</strong>,</li><li>bir ek dokunuş karşılığında izlemeyi seçebileceğiniz, deneme başına en çok iki kez sunulan bir <strong>ödüllü video</strong>. Oyundaki her seviye kendi yazılı dokunuş bütçesiyle çözülebilir; bu reklamları reddetmek hiçbir bulmacayı geçilemez hâle getirmez.</li></ul>
+<p>Bu reklamları sunmak için LevelPlay ve aracılık ettiği ağlar şunları işleyebilir:</p>
+<ul><li>cihazınızın reklam kimliği (iOS&#x27;ta IDFA, Android&#x27;de Advertising ID),</li><li>kaba cihaz ve uygulama bilgisi — model, işletim sistemi sürümü, dil, uygulama sürümü, bağlantı türü ve genellikle IP adresinizden türetilen yaklaşık ülke bilgisi,</li><li>reklam etkileşimleri: bir reklamın gösterildiği, izlendiği, kapatıldığı ya da tıklandığı.</li></ul>
+<p>Bu bilgiler bize değil, <strong>kendi gizlilik politikaları</strong> kapsamında Unity/ironSource&#x27;a ve aracılık ettiği ağlara gider. Biz görmüyoruz ve sizi tanımlayan hiçbir rapor almıyoruz.</p>
+<ul><li>Unity/ironSource gizlilik politikası: <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">https://unity.com/legal/game-player-and-app-user-privacy-policy</a></li><li>Aracılık edilen ağların güncel listesi bu uygulamanın LevelPlay panosunda görünür.</li></ul>
+<p><strong>Seçenekleriniz.</strong></p>
+<ul><li><strong>iOS:</strong> uygulama ilk açılışta, Apple&#x27;ın App Tracking Transparency uyarısıyla, reklam kimliğinizi kullanıp kullanamayacağını sorar. Reddederseniz reklamlar yine çıkar ama o kimlik olmadan seçilir. Cevabınızı istediğiniz zaman <em>Ayarlar → Gizlilik ve Güvenlik → İzleme</em> altından değiştirebilirsiniz.</li><li><strong>Android:</strong> Advertising ID&#x27;nizi <em>Ayarlar → Google → Reklamlar</em> altından silebilir, sıfırlayabilir ya da kişiselleştirilmiş reklamları tamamen kapatabilirsiniz.</li><li><strong>Oyunun içinde:</strong> Ayarlar → <em>Gizlilik seçenekleri</em> rıza ekranını istediğin an yeniden açar; ilk açılışta verilen karar hiçbir zaman kesin değildir.</li><li>Her iki durumda da oyun tıpatıp aynı şekilde oynanır.</li></ul>
+<h2>Uygulamanın hâlâ yapmadıkları</h2>
+<ul><li>Hiçbir kişisel veri toplamıyoruz — adınız, e-postanız, rehberiniz, fotoğraflarınız, kesin konumunuz veya IP adresiniz dâhil.</li><li>Hesap, giriş, bulut kayıt, liderlik tablosu veya sosyal özellik yok.</li><li>Analitik ya da çökme raporu SDK&#x27;sı yok. Uygulamadaki tek üçüncü taraf SDK LevelPlay&#x27;dir.</li><li>Uygulama içi olsun olmasın hiçbir satın alma yok.</li><li>Bulmacaların kendisi bağlantı istemez: cihaz çevrimdışıyken her seviye, her dil ve tüm ilerlemeniz normal çalışır, yalnızca reklamlar atlanır.</li></ul>
+<h2>İzinler</h2>
+<ul><li><strong>Android</strong>: <code>INTERNET</code> ve <code>ACCESS_NETWORK_STATE</code> (reklam SDK&#x27;sı ister; oyunun kendisi hiçbir istek yapmaz), <code>com.google.android.gms.permission.AD_ID</code> (reklamlarda kullanılan reklam kimliği) ve kapatabildiğiniz titreşim ayarı için <code>VIBRATE</code>.</li><li><strong>iOS</strong>: yalnızca App Tracking Transparency izni istenir, başka hiçbir izin yok.</li></ul>
+<h2>Çocuklar</h2>
+<p>Driftleaf&#x27;te satın alma, sohbet, kullanıcı içeriği ve bizim tarafımızdan veri toplama yoktur. Reklam vardır ve reklam SDK&#x27;sı bir reklam kimliği kullanır; bu yüzden uygulama <strong>çocuklara yönelik değildir</strong> ve Google Play&#x27;de 13+ hedef kitleyle listelenir. 13 yaş altı çocuklardan bilerek veri toplamıyoruz. Bir çocuğun bu uygulama üzerinden veri verdiğini düşünüyorsanız aşağıdaki adrese yazın; talebi reklam ortağına iletiriz.</p>
+<h2>Mağaza tarafındaki veriler</h2>
+<p>Apple ve Google, kendi platformlarındaki indirme, satın alma ve çökme raporu akışlarını kendi gizlilik politikaları kapsamında işler. İşletim sistemi düzeyinde onlarla çökme tanılama verisi paylaşmayı seçerseniz, o veri bize değil onlara gider.</p>
+<h2>Değişiklikler</h2>
+<p>Bu politika değişirse yeni sürüm aynı adreste yayımlanır ve baştaki tarih güncellenir. Kendi başına bir şey toplamaya başlayan bir uygulama sürümü, bunu önce burada yazar.</p>
+<h2>İletişim</h2>
+<p><a href="mailto:burakgogcegoz@gmail.com">burakgogcegoz@gmail.com</a></p>
+  </section>
+
+  <footer class="end"><a href="../">All CerebroCraft games</a> · <a href="./">Driftleaf support</a> · <a href="mailto:burakgogcegoz@gmail.com">burakgogcegoz@gmail.com</a></footer>
+</main>
+<script>
+  /* Both languages are in the page, so with JavaScript off nothing is lost —
+     the toggle only hides one of them. The choice goes in the query string:
+     a fragment would make the browser scroll past the buttons that set it. */
+  (function () {
+    var sections = { en: document.getElementById('en'), tr: document.getElementById('tr') };
+    var buttons = document.querySelectorAll('.langs button');
+    function show(code) {
+      for (var k in sections) sections[k].hidden = (k !== code);
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.lang === code)); });
+      document.documentElement.lang = code;
+      try { history.replaceState(null, '', '?lang=' + code); } catch (e) {}
+    }
+    buttons.forEach(function (b) { b.addEventListener('click', function () { show(b.dataset.lang); }); });
+    var asked = (location.search.match(/[?&]lang=(tr|en)/) || [])[1] ||
+                (location.hash === '#tr' ? 'tr' : location.hash === '#en' ? 'en' : '');
+    show(asked || ((navigator.language || 'en').toLowerCase().indexOf('tr') === 0 ? 'tr' : 'en'));
+    window.scrollTo(0, 0);
+  })();
+</script>
+</body>
+</html>

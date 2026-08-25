@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Driftleaf — Support</title>
+<meta name="description" content="Driftleaf support and frequently asked questions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,600&family=Public+Sans:wght@400;600&display=swap">
+<style>
+  :root {
+    --bg:#f3f8f6; --card:#ffffff; --ink:#16292b; --soft:#4f696e;
+    --line:#dae7e3; --line-soft:#eaf2ef; --accent:#2b7a71; --leaf:#5f8f41;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:#0e1617; --card:#141f1e; --ink:#e4efec; --soft:#a3bab6;
+      --line:#22322f; --line-soft:#192726; --accent:#77cec2; --leaf:#9ccb72;
+    }
+  }
+  * { box-sizing:border-box; }
+  body {
+    margin:0; padding:0 20px 72px; background:var(--bg); color:var(--ink);
+    font:16px/1.65 "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust:100%;
+  }
+  main { max-width:42rem; margin:0 auto; }
+  header.top { padding:44px 0 0; }
+  .mark { display:block; width:44px; height:44px; margin:0 0 14px; }
+  h1 {
+    font-family:Newsreader, Georgia, "Times New Roman", serif; font-weight:600;
+    font-size:clamp(1.7rem,5vw,2.3rem); line-height:1.15; margin:0 0 6px; text-wrap:balance;
+  }
+  .tagline { color:var(--soft); margin:0 0 20px; font-size:15px; }
+  .rule { height:2px; background:var(--ink); opacity:.85; margin:0 0 26px; }
+  .langs { display:flex; gap:8px; margin:0 0 26px; }
+  .langs button {
+    font:inherit; font-size:14px; padding:7px 15px; min-height:40px;
+    border:1px solid var(--line); border-radius:999px; background:var(--card);
+    color:var(--soft); cursor:pointer;
+  }
+  .langs button[aria-pressed="true"] { background:var(--accent); border-color:var(--accent); color:var(--bg); }
+  .langs button:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+  .eyebrow {
+    font-size:12px; letter-spacing:.13em; text-transform:uppercase;
+    color:var(--soft); margin:34px 0 12px;
+  }
+  h2 {
+    font-family:Newsreader, Georgia, serif; font-weight:600; font-size:1.15rem;
+    margin:30px 0 8px; padding-top:10px; border-top:1px solid var(--line);
+  }
+  h3 { font-size:1rem; margin:22px 0 4px; }
+  p { margin:0 0 12px; }
+  ul { padding-left:1.2rem; margin:0 0 14px; }
+  li { margin:5px 0; }
+  code {
+    background:var(--line-soft); border:1px solid var(--line); padding:1px 5px;
+    border-radius:5px; font-size:.9em;
+  }
+  a { color:var(--accent); overflow-wrap:anywhere; }
+  footer.end {
+    margin-top:44px; padding-top:18px; border-top:1px solid var(--line);
+    color:var(--soft); font-size:14px;
+  }
+  section[hidden] { display:none; }
+</style>
+</head>
+<body>
+<main>
+  <header class="top">
+    <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+      <circle cx="32" cy="34" r="24" fill="none" stroke="var(--accent)" stroke-width="2" opacity=".5"/>
+      <circle cx="32" cy="34" r="13" fill="none" stroke="var(--accent)" stroke-width="2" opacity=".5"/>
+      <path d="M32 16 C42 25 42 40 32 50 C22 40 22 25 32 16 Z" fill="var(--leaf)" opacity=".9"/>
+      <path d="M32 21 L32 45" stroke="var(--bg)" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+    </svg>
+    <h1>Driftleaf</h1>
+    <p class="tagline">Support &amp; frequently asked questions</p>
+    <div class="rule"></div>
+    <div class="langs">
+      <button type="button" data-lang="en" aria-pressed="true">English</button>
+      <button type="button" data-lang="tr" aria-pressed="false">Türkçe</button>
+    </div>
+  </header>
+
+  <section id="en" lang="en">
+
+    <p>Driftleaf is a puzzle about a leaf, a pond, and a board that turns underneath it.
+    You never touch the leaf. Before you release it you turn a few arrows — and then you
+    only watch, because <strong>every tile the leaf leaves turns a quarter turn behind
+    it</strong>. The route rewrites itself as it runs.</p>
+
+    <p class="eyebrow">The questions people actually ask</p>
+
+    <h3>I am stuck. Is this level even solvable?</h3>
+    <p>Yes — every one of the sixty levels was proven solvable inside the tap budget
+    printed on it, by running every tap plan a player could make through the game's own
+    rules engine. If the counter says three taps, three taps are enough, and all three are
+    necessary: no level can be cleared with one tap fewer.</p>
+    <p>The lightbulb button in the game bar points at a tile that belongs to a real
+    solution.</p>
+
+    <h3>Do I have to watch an advert to finish a level?</h3>
+    <p>Never. The optional "+1 tap" video only ever softens a puzzle — the printed budget
+    is always enough on its own. That is checked on every build, not promised.</p>
+
+    <h3>The leaf stops in the wrong place every time.</h3>
+    <p>Look at where the route crosses itself rather than at the tile where it stops. The
+    tile you visit twice does two different jobs: it sends the leaf one way on the first
+    pass and somewhere else on the second. Fixing the blockage is usually the wrong move.</p>
+
+    <h3>My progress disappeared.</h3>
+    <p>Progress lives on your device only — there is no account and no cloud save, so
+    deleting the app or clearing its data removes it, and a new phone starts fresh.</p>
+
+    <h3>Can I turn the sound or the vibration off?</h3>
+    <p>Both, separately, in Settings. The game plays identically either way.</p>
+
+    <h3>Does it work without a connection?</h3>
+    <p>Completely. Every level, every language and all your progress work in airplane
+    mode; only the adverts are skipped.</p>
+
+    <h3>Which languages are there?</h3>
+    <p>Turkish, English, German, French, Spanish, Portuguese, Italian, Japanese, Korean
+    and Simplified Chinese. The game follows your device language and you can change it
+    in Settings.</p>
+
+    <h3>Something is broken, or a level looks wrong.</h3>
+    <p>Write to <a href="mailto:burakgogcegoz@gmail.com">burakgogcegoz@gmail.com</a> with
+    the level number at the top of the screen — that number identifies the exact board.</p>
+
+  </section>
+
+  <section id="tr" lang="tr">
+
+    <p>Driftleaf bir yaprak, bir gölet ve yaprağın altında dönen bir tahta üzerine kurulu
+    bir bulmaca. Yaprağa hiç dokunmazsın. Bırakmadan önce birkaç oku çevirirsin — sonra
+    yalnızca izlersin, çünkü <strong>yaprak bir karodan ayrılırken o karo arkasında çeyrek
+    tur döner</strong>. Yol, akarken kendini yeniden yazar.</p>
+
+    <p class="eyebrow">Gerçekten sorulan sorular</p>
+
+    <h3>Takıldım. Bu bölüm gerçekten geçilebiliyor mu?</h3>
+    <p>Evet — altmış bölümün her biri, üstünde yazan dokunuş bütçesiyle çözülebildiği
+    ispatlanarak yayınlandı: oyuncunun yapabileceği tüm dokunuş planları oyunun kendi
+    kural motorunda tek tek çalıştırıldı. Sayaç "üç dokunuş" diyorsa üçü yeter, üçü de
+    gereklidir; hiçbir bölüm bir dokunuş eksiğiyle geçilemez.</p>
+    <p>Oyun çubuğundaki ampul düğmesi, gerçek bir çözüme ait bir karoyu gösterir.</p>
+
+    <h3>Bölümü geçmek için reklam izlemem gerekiyor mu?</h3>
+    <p>Asla. İsteğe bağlı "+1 dokunuş" videosu bulmacayı yalnızca yumuşatır; yazılı bütçe
+    tek başına her zaman yeter. Bu, söz verilen değil, her derlemede yeniden sınanan bir
+    şey.</p>
+
+    <h3>Yaprak her seferinde yanlış yerde duruyor.</h3>
+    <p>Yaprağın durduğu karoya değil, rotanın kendisiyle kesiştiği yere bak. İki kez
+    uğradığın karo iki ayrı iş yapar: ilk geçişte seni bir yere, ikinci geçişte bambaşka
+    bir yere gönderir. Tıkanmayı düzeltmeye çalışmak genelde yanlış hamledir.</p>
+
+    <h3>İlerlemem kayboldu.</h3>
+    <p>İlerleme yalnızca cihazında durur — hesap da bulut kayıt da yok. Uygulamayı silmek
+    ya da verisini temizlemek onu da siler; yeni bir telefon sıfırdan başlar.</p>
+
+    <h3>Sesi veya titreşimi kapatabilir miyim?</h3>
+    <p>İkisini de, ayrı ayrı, Ayarlar'dan. Oyun her iki durumda da tıpatıp aynı oynanır.</p>
+
+    <h3>İnternetsiz çalışıyor mu?</h3>
+    <p>Tamamen. Uçak modunda her bölüm, her dil ve tüm ilerlemen normal çalışır; yalnızca
+    reklamlar atlanır.</p>
+
+    <h3>Hangi diller var?</h3>
+    <p>Türkçe, İngilizce, Almanca, Fransızca, İspanyolca, Portekizce, İtalyanca, Japonca,
+    Korece ve Basitleştirilmiş Çince. Oyun cihazının dilini izler, Ayarlar'dan
+    değiştirebilirsin.</p>
+
+    <h3>Bir şey bozuk ya da bir bölüm yanlış görünüyor.</h3>
+    <p>Ekranın üstündeki bölüm numarasıyla birlikte
+    <a href="mailto:burakgogcegoz@gmail.com">burakgogcegoz@gmail.com</a> adresine yaz — o
+    numara tam olarak hangi tahta olduğunu söylüyor.</p>
+
+  </section>
+
+  <footer class="end"><a href="../">All CerebroCraft games</a> · <a href="privacy.html">Privacy Policy</a> · <a href="mailto:burakgogcegoz@gmail.com">burakgogcegoz@gmail.com</a></footer>
+</main>
+<script>
+  /* Both languages are in the page, so with JavaScript off nothing is lost —
+     the toggle only hides one of them. The choice goes in the query string:
+     a fragment would make the browser scroll past the buttons that set it. */
+  (function () {
+    var sections = { en: document.getElementById('en'), tr: document.getElementById('tr') };
+    var buttons = document.querySelectorAll('.langs button');
+    function show(code) {
+      for (var k in sections) sections[k].hidden = (k !== code);
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.lang === code)); });
+      document.documentElement.lang = code;
+      try { history.replaceState(null, '', '?lang=' + code); } catch (e) {}
+    }
+    buttons.forEach(function (b) { b.addEventListener('click', function () { show(b.dataset.lang); }); });
+    var asked = (location.search.match(/[?&]lang=(tr|en)/) || [])[1] ||
+                (location.hash === '#tr' ? 'tr' : location.hash === '#en' ? 'en' : '');
+    show(asked || ((navigator.language || 'en').toLowerCase().indexOf('tr') === 0 ? 'tr' : 'en'));
+    window.scrollTo(0, 0);
+  })();
+</script>
+</body>
+</html>
