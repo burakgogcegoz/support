@@ -42,6 +42,15 @@
   }
   .langs button[aria-pressed="true"] { background:var(--accent); border-color:var(--accent); color:var(--bg); }
   .langs button:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+  .get { display:flex; gap:12px; align-items:center; flex-wrap:wrap; margin:0 0 26px; }
+  .badge {
+    display:inline-block; padding:11px 18px; border-radius:10px;
+    background:var(--ink); color:var(--bg); text-decoration:none;
+    font-size:15px; font-weight:600; line-height:1.2;
+  }
+  .badge:hover { background:var(--accent); }
+  .badge:focus-visible { outline:2px solid var(--accent); outline-offset:3px; }
+  .soon { color:var(--soft); font-size:14px; }
   .eyebrow {
     font-size:12px; letter-spacing:.13em; text-transform:uppercase;
     color:var(--soft); margin:34px 0 12px;
@@ -82,6 +91,15 @@
       <button type="button" data-lang="en" aria-pressed="true">English</button>
       <button type="button" data-lang="tr" aria-pressed="false">Türkçe</button>
     </div>
+    <!--
+      The shared result card in the game points at this page, so this is where
+      someone who was handed a score ends up. Until now the page could tell them
+      what Driftleaf is and nothing about how to get it.
+    -->
+    <div class="get">
+      <a class="badge" href="https://apps.apple.com/app/id6804415221">Download on the App&nbsp;Store</a>
+      <span class="soon">Google Play — soon</span>
+    </div>
   </header>
 
   <section id="en" lang="en">
@@ -107,8 +125,8 @@
     extra tap once the budget is spent, the other reveals one more hint tile.</p>
 
     <h3>Why does the lightbulb sometimes ask for a video?</h3>
-    <p>The first hint on a board is always free, and in the first two worlds — the ones
-    that teach the rule — every hint is free. Beyond those, a <em>second</em> hint in the
+    <p>The first hint on a board is always free, and in the first world — the one
+    that teaches the rule — every hint is free. Beyond it, a <em>second</em> hint in the
     same visit is offered for a short video, because a hint button pressed five times
     hands over the whole answer and quietly cancels the puzzle. Leave the level and come
     back and the first hint is free again. The button shows the offer before anything
@@ -163,7 +181,7 @@
     biri bütçe bitince bir ek dokunuş verir, diğeri bir ipucu karosu daha açar.</p>
 
     <h3>Ampul neden bazen video istiyor?</h3>
-    <p>Her tahtada ilk ipucu bedava; ilk iki dünyada — kuralı öğreten dünyalarda — her
+    <p>Her tahtada ilk ipucu bedava; ilk dünyada — kuralı öğreten dünyada — her
     ipucu bedava. Ötesinde, <em>aynı ziyaretteki ikinci</em> ipucu için kısa bir video
     teklif ediliyor: beş kez basılan bir ipucu düğmesi cevabın tamamını verir ve bulmacayı
     sessizce iptal eder. Bölümden çıkıp geri girersen ilk ipucu yine bedava. Düğme teklifi
